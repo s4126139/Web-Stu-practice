@@ -1,0 +1,57 @@
+h1 {
+    color: red
+}
+
+/* all paragraph */
+p{
+}
+
+/* all paragraph + list  */
+p, li {
+}
+
+/* adding a class */
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+/* descendant combinator: select only an <em> that is nested inside an <li> */
+/* This selector will select any <em> element that is a descendant of an <li> */
+li em {
+  color: rebeccapurple;
+}
+
+/* next-sibling combinator: styling any paragraph after h1 */
+h1 + p {
+    font-size: 200%;
+}
+
+/* Styling things based on state */
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Combining selectors and combinators */
+/* selects any <span> that is inside a <p>, which is inside an <article>  */
+article p span {
+}
+
+/* selects any <p> that comes directly after a <ul>, which comes directly after an <h1>  */
+h1 + ul + p {
+}
+
+/* This will style any element with a class of special, which is inside a <p>, which comes just after an <h1>. Phew! This should target the <span class="special">span element</span> element in your code. */
+h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
