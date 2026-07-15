@@ -1,1 +1,13 @@
 /* YOUR STYLE GOES IN HERE */
+li {
+    color: blue;
+}
+
+.done{
+    color: gray;
+}
+
+#clear{
+    background-color: red;
+    color: white;
+}
